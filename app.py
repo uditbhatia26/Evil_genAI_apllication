@@ -8,7 +8,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 ## Langsmith Tracking
 ## Langsmith Tracking using Streamlit secrets
-
+os.environ["LANGCHAIN_ENDPOINT"] = st.secrets['LANGCHAIN_ENDPOINT']
 os.environ["LANGCHAIN_API_KEY"] = st.secrets["LANGCHAIN_API_KEY"]
 os.environ["LANGCHAIN_TRACING_V2"] = "true" 
 os.environ["LANGCHAIN_PROJECT"] = st.secrets["LANGCHAIN_PROJECT"]
