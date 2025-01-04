@@ -8,10 +8,10 @@ import requests  # Importing requests to handle the ConnectionError exception
 
 ## Langsmith Tracking
 ## Langsmith Tracking using Streamlit secrets
-os.environ["LANGCHAIN_ENDPOINT"] = st.secrets['LANGCHAIN_ENDPOINT']
-os.environ["LANGCHAIN_API_KEY"] = st.secrets["LANGCHAIN_API_KEY"]
-os.environ["LANGCHAIN_TRACING_V2"] = "true" 
-os.environ["LANGCHAIN_PROJECT"] = st.secrets["LANGCHAIN_PROJECT"]
+os.environ['LANGCHAIN_TRACING_V2']="true"
+os.environ['LANGCHAIN_ENDPOINT']="https://api.smith.langchain.com"
+os.environ['LANGCHAIN_API_KEY']="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"
+os.environ['LANGCHAIN_PROJECT']="SIMPLE GEN AI PROJECT"
 
 ## Prompt Template
 prompt = ChatPromptTemplate.from_messages(
